@@ -9,4 +9,8 @@ public class SavingsAccount extends Account{
     public void addInterest(){
         super.deposit(getBalance() * interest);
     }
+
+    public void update(){
+        addInterest();
+    }
 }
